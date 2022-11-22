@@ -204,6 +204,7 @@ Slider
   text-align: center;
 }
 .slide-img {
+  overflow: hidden;
   height: 100%;
   object-fit: cover;
 }
@@ -244,6 +245,9 @@ Slider
   color: var(--clr-grey-5);
   transition: var(--transition);
 }
+.prevBtn{
+  display: none;
+}
 .prevBtn:hover,
 .nextBtn:hover {
   color: var(--clr-grey-3);
@@ -264,19 +268,3 @@ Slider
     height: 65vh;
   }
 }
-.slide:nth-child(1){
-  left: 0;
-}
-.slide:nth-child(2){
-  left: 100%;
-}
-.slide:nth-child(3){
-  left: 200%;
-}
-.slide:nth-child(4){
-  left: 300%;
-}
-.slide{
-  transform: translateX(-0%);
-}
-/* negative value moves to left */
