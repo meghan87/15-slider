@@ -17,11 +17,11 @@ nextBtn.addEventListener("click",function(){
     }
 
     if(counter === slides.length-1){
-        nextBtn.style.display = "none";
-        prevBtn.style.display = "block";
+        nextBtn.disabled = true;
+        prevBtn.disabled = false;
     } else{
-        nextBtn.style.display = "block";
-        prevBtn.style.display = "block";
+        nextBtn.disabled = false;
+        prevBtn.disabled = false;
     }
 })
 
@@ -34,11 +34,11 @@ prevBtn.addEventListener("click",function(){
     }
 
     if(counter === 0){
-        prevBtn.style.display = "none";
-        nextBtn.style.display = "block";
+        prevBtn.disabled = true;
+        nextBtn.disabled = false;
     }
     else{
-        nextBtn.style.display = "block";
-        prevBtn.style.display = "block";
+        nextBtn.disabled = false;
+        prevBtn.disabled = false;
     }
 });
